@@ -1,0 +1,22 @@
+{
+    "data":[
+        {
+            "id": "001",
+            "nombre": "sarmiento",
+            "Email": "sarmiento@duocuc.cl",
+            "password": "123456"
+        },
+        {
+            "id": "002",
+            "nombre": "carlos",
+            "Email": "carlos@duocuc.cl",
+            "password": "456789"
+        },
+        {
+            "id": "003",
+            "nombre": "juan",
+            "Email": "juan@duocuc.cl",
+            "password": "456123"
+        }
+    ]
+}
