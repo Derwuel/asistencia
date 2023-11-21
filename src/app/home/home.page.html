@@ -7,14 +7,25 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <form [formGroup] ="formulariologin">
-    <ion-item>
-      <ion-label for="Nombre">Nombre:</ion-label>
-      <ion-input formControlName="Nombre"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label for="password">contraseña:</ion-label>
-      <ion-input formControlName="password" type="password"></ion-input>
-    </ion-item>
-  </form>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Bienvenido a Duoc</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup] ="formulariologin">
+        <ion-item>
+          <ion-label for="Nombre">Nombre:</ion-label>
+          <ion-input formControlName="Nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label for="password">contraseña:</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <ion-button (click)="Ingresar()">
+        Ingresar
+      </ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
