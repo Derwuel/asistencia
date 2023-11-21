@@ -10,6 +10,8 @@ import { pipe } from 'rxjs';
 })
 export class AlumnoPage implements OnInit {
 
+  usuarios: any = [];
+
   constructor(
     private http: HttpClient
   ) { }
@@ -17,6 +19,7 @@ export class AlumnoPage implements OnInit {
   ngOnInit() {
     this.getalumnos().subscribe(res=>{
       console.log("res",res)
+      this.usuarios = res;
     });
   }
 

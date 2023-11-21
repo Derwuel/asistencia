@@ -1,27 +1,20 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Inicio
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title>Bienvenido</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      <ion-list>
-        <ion-item>
-          <ion-input label="Email" type="email" placeholder="Ingrese su email"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input label="Contraseña" type="password" value="ingrse su Contraseña"></ion-input>
-        </ion-item>
-        <ion-button [routerLink]="['/alumno']">prueba</ion-button>
-      </ion-list>
-    </ion-card-content>
-  </ion-card>
+  <form [formGroup] ="formulariologin">
+    <ion-item>
+      <ion-label for="Nombre">Nombre:</ion-label>
+      <ion-input formControlName="Nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label for="password">contraseña:</ion-label>
+      <ion-input formControlName="password" type="password"></ion-input>
+    </ion-item>
+  </form>
 </ion-content>
